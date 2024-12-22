@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import './Registration.css';
 
 const Registration = () => {
     const navigate = useNavigate();
@@ -37,8 +38,13 @@ const Registration = () => {
     
       }
 
+    const backtoLandingPage = () => {
+      navigate('/');
+    }
+
   return (
     <div className='registerForm'>
+      <button onClick={backtoLandingPage}></button>      
       <form onSubmit={handleRegister}>
         <input type="text" name="name" id="name" onChange={handleChange} value ={formData.name}placeholder="Enter Name"/>
         <input type="text" name="email" id="email"  onChange={handleChange} value ={formData.email} placeholder="Enter Email"/>

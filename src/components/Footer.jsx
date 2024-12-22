@@ -3,7 +3,8 @@ import styles from "./Footer.module.css";
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <div className={styles.footer}>
+    <footer>
         <div className={styles.formBot}>
             <div className={styles.formBotTitle}>
 
@@ -20,13 +21,13 @@ const Footer = () => {
                 Status<img src='/send.png' height='16' width='16' />
             </div>
             <div>
-                Documentation<img src='' height='16' width='16' />
+                Documentation<img src='/send.png' height='16' width='16' />
             </div>
             <div>
-                Roadmap<img src='' height='16' width='16' />
+                Roadmap<img src='/send.png' height='16' width='16' />
             </div>
             <div>
-                Pricing<img src='' height='16' width='16' />
+                Pricing<img src='/send.png' height='16' width='16' />
             </div>
         </div>
         <div className={styles.community}>
@@ -34,16 +35,16 @@ const Footer = () => {
                 Community
             </div>
             <div>
-                Discord<img src='' height='16' width='16' />
+                Discord<img src='/send.png' height='16' width='16' />
             </div>
             <div>
-                Github repository<img src='' height='16' width='16' />
+                Github repository<img src='/send.png' height='16' width='16' />
             </div>
             <div>
-                Twitter<img src='' height='16' width='16' />
+                Twitter<img src='/send.png' height='16' width='16' />
             </div>
             <div>
-                Linkedin<img src='' height='16' width='16' />
+                Linkedin<img src='/send.png' height='16' width='16' />
             </div>
             <div>
                 OSS Friends
@@ -51,7 +52,7 @@ const Footer = () => {
         </div>
         <div className={styles.company}>
             <div className={styles.companyTitle}>
-                Community
+                Company
             </div>
             <div>
                 About
@@ -67,6 +68,7 @@ const Footer = () => {
             </div>
         </div>
     </footer>
+    </div>
   )
 }
 
