@@ -1,0 +1,44 @@
+.login{
+    position: relative;
+    background-color: #18181B;
+    color: white;
+}
+
+.login .loginForm{
+    width : 40%;
+    margin: 20% auto;
+}
+
+
+.login .loginForm div{
+    margin : 20px;
+}
+
+.login .loginForm label{
+    display: block;
+}
+
+.login .backButton{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.login #triangles{
+    position: absolute;
+    left: 20px;
+    top : 20px;
+}
+
+.login #ellipse1{
+    position: absolute;
+    right : 20px;
+    bottom : 0px;
+}
+
+.login #ellipse2{
+    position: absolute;
+    right :0 px;
+    top : 15px;
+}
+

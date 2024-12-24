@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useState } from 'react'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import './Login.css';
 
 const Login = () => {
     const navigate = useNavigate();
@@ -43,14 +44,30 @@ const Login = () => {
         console.log(formData);
     };
 
+    const backtoLandingPage = () => {
+      navigate('/');
+    }
+
     return (
-        <div>
-        <form onSubmit={handleLogin}>
-            <input type="text" name="email" id="email"  onChange={handleChange} value ={formData.email} placeholder="Enter Email"/>
-            <input type="password" name="password" id="password" onChange={handleChange} value ={formData.password} placeholder="Enter Password"/>
-            <input type="submit" value="Sign in"/>
-        </form>
-        <div>Don't have an account? <a href="/register">Sign Up</a></div>
+        <div className='login'>
+          <button onClick={backtoLandingPage} className='backButton'><img src="/arrow_back.png" alt="back"/></button>
+          <form onSubmit={handleLogin} className='loginForm'>
+              <div>
+                <label>Email</label>
+                <input type="text" name="email" id="email"  onChange={handleChange} value ={formData.email} placeholder="Enter your email"/>
+              </div>
+              <div>
+                <label>Password</label>
+                <input type="password" name="password" id="password" onChange={handleChange} value ={formData.password} placeholder="**********"/>
+              </div>
+              <input type="submit" value="Log In"/>
+              <div>OR</div>
+              <input type="button" value = "Sign in with Google"/>
+              <div>Don't have an account? <a href="/register">Register Now</a></div>
+          </form>
+          <div id='triangles'><img src="/Group2.png" alt="Triangles"/></div>
+          <div id='ellipse1'><img src="/Ellipse1.png" alt="Triangles"/></div>
+          <div id='ellipse2'><img src="/Ellipse2.png" alt="Triangles"/></div>
         </div>
   )
 }
