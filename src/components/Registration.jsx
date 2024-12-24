@@ -14,6 +14,7 @@ const Registration = () => {
       })
     
       const apiUrl = import.meta.env.VITE_BACKEND_API_URL;
+      console.log(apiUrl);
       
       const handleChange = (e) => {
         setFormData({
