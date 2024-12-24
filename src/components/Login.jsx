@@ -11,7 +11,6 @@ const Login = () => {
         if(localStorage.getItem('token')){
             navigate('/dashboard');
         }
-
     },[]);
     const [formData,setFormData] = useState({
         email:'',
@@ -34,8 +33,6 @@ const Login = () => {
           alert('Error in Login');
         })
       }
-
-
 
     const handleChange = (e) => {
         setFormData({
